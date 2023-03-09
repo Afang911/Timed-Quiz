@@ -15,8 +15,9 @@
   .reset-button {
     font-size: 16px;
     height: 30px;
-    line-height: 8px;
+    line-height: 5px;
     margin-top: 20px;
+    
   }
   
   .win-loss-container {
@@ -24,9 +25,10 @@
     justify-content: space-between;
     margin-top: 16px;
   }
-  
+   
+
   button {
-    background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
+    background: radial-gradient(circle, rgb(226, 222, 180) 0%, rgba(187,96,33,0.9542191876750701) 100%);
     border-radius: 8px;
     color: #13293d;
     cursor: pointer;
@@ -41,7 +43,8 @@
     transition-timing-function: linear;
     margin-top: 0.6em;
   }
-  
+ 
+
   header {
     padding: 40px;
     text-align: center;
@@ -57,7 +60,7 @@
   }
   
   section {
-    flex: 0 auto;
+    flex:  auto;
     padding: 8px;
     margin-top: 50px;
     background-color: white;
@@ -82,6 +85,7 @@
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: auto;
     padding: 20px;
+    
   }
   
   .word-blanks {
@@ -96,7 +100,7 @@
   .timer {
     height: 240px;
     padding: 10px;
-    background: #13293d;
+    background: #006dd3;
     color: #fff;
     text-align: center;
   }
@@ -129,7 +133,7 @@
   
     .reset-button {
       font-size: 12px;
-      width: 20ox;
+      width: 20px;
       
     }
   

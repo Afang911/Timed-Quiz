@@ -93,5 +93,41 @@ const questions = [
             {text: '()', correct: false},
             {text: '<>', correct: false}
             ]
-    }
+    },
+    {
+    question: 'In Javascript, how do you interact with a button element?',
+        answers: [
+                {text: 'add a if statement', correct: false },
+                {text: 'add an event listener', correct: true},
+                {text: 'it just works', correct: false},
+                {text: '<>', correct: false}
+                ]
+    },
+    {
+        question: 'In Javascript what is edited in place of the HTML?',
+        answers: [
+                 {text: 'The CSS file', correct: false },
+                {text: 'The HTML', correct: false},
+                {text: 'The DOM', correct: true },
+                 {text: 'Nothing is edited', correct: false}
+                 ]
+    },
+    {
+        question: 'In Javascript can you put a function inside another function?',
+        answers: [
+                    {text: 'yes', correct: true },
+                    {text: 'no', correct: false},
+                    {text: 'sometimes', correct: false},
+                    {text: 'with an even listener', correct: false}
+                    ]
+    },
+    {
+        question: 'In Javascript what bracket is used for arrays?',
+        answers: [
+                    {text: '//', correct: false },
+                    {text: '{}', correct: false},
+                    {text: '[]', correct: true},
+                    {text: '<>', correct: false}
+                    ] 
+                }  
 ]

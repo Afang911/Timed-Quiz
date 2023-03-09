@@ -56,7 +56,7 @@ body.wrong{
 .btn.correct {
   background-color: rgb(42, 218, 42);
 }
-.btn.incorrect {
+.btn.wrong {
   background-color: red;
 }
 .start-btn, .next-btn {

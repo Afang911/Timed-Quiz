@@ -3,23 +3,48 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById ('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement =document.getElementById('answer-buttons')
+const header = document.querySelector("header");
+var timerElement = document.getElementById("timer");
+var timeLimit = 60;
+
+
 
 let shuffledQuestions, currentQuestionIndex
 
 
+startButton.addEventListener("click", function() {
+    header.style.display = "none";
+  });
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     nextQuestion()
 })
 
+function updateTimer() {
+    
+    timeLimit--;
+    timerElement.innerHTML = "Time remaining: " + timeLimit + " seconds";
+  
+    if (timeLimit == 0) {
+      clearInterval(timer);
+      timerElement.innerHTML = "Time is up!";
+    } else {
+      setTimeout(updateTimer, 1000);
+    }
+  }
+
 function startGame() {
+updateTimer();
+timerElement.style.display = "block";
 startButton.classList.add('hide')
 shuffledQuestions = questions.sort(() => Math.random() - .5)
 currentQuestionIndex = 0
 questionContainerElement.classList.remove('hide')
 nextQuestion ()
 }
+
+
 
 function nextQuestion() {
     resetState()
@@ -118,7 +143,7 @@ const questions = [
                     {text: 'yes', correct: true },
                     {text: 'no', correct: false},
                     {text: 'sometimes', correct: false},
-                    {text: 'with an even listener', correct: false}
+                    {text: 'with an event listener', correct: false}
                     ]
     },
     {
@@ -131,3 +156,6 @@ const questions = [
                     ] 
                 }  
 ]
+
+
+

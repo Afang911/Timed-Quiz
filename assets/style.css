@@ -25,7 +25,7 @@ body.correct {
   background-color: var(--correct);
 }
 body.wrong{
-  background-color: var(--wrong);
+  background-color: var(--incorrect);
 }
 .container {
   width: 800px;
@@ -71,3 +71,17 @@ body.wrong{
 .hide {
   display: none ;
 }
+header {
+  position: absolute;
+  top: 300px;
+  font-size: 2rem
+}
+#timer {
+  display: none;
+  position: absolute;
+  bottom: 300px;
+  font-size: 2rem
+}
+
+
+
